@@ -1,4 +1,13 @@
 # Sales_Prediction
+
+
+
+First, we validate the input provided by the user. If the validation is unsuccessful, an error file is returned. If the validation is successful, the translation process takes place. Initially, we read the mapping sheet using the Apache POI library and store it in a hash map. Then, we convert the input file to a JsonObject using the Jackson and Gson libraries. Using this JsonObject and the hashmap, we create another JsonObject that aligns with the mapping sheet. Finally, we convert it to the required file type.
+
+
+
+
+
 import org.json.JSONObject;
 
 import java.util.*;
